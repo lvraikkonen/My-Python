@@ -161,3 +161,29 @@ def product(lst):
     return result
 
 print product([4,5,5])
+
+lst = []
+
+# 13 remove_duplicates
+def remove_duplicates(lst):
+    new = []
+    for item in lst:
+        if item not in new:
+            new.append(item)
+    return new
+
+print remove_duplicates([1,1,2,2,4])
+
+
+ 14 median
+def median(lst):
+    result = 0
+    lst = sorted(lst)
+    length = len(lst)
+    if length % 2 == 0:
+        result = (lst[length/2 - 1] + lst[length/2])/2.0
+    else:
+        result = lst[length/2]
+    return result
+
+print median([1,1,2])
