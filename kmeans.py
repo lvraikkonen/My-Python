@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import math
 import random
 
@@ -121,7 +122,7 @@ class kClusterer:
         self.memberOf = [self.assginPointToCluster(i)
                          for i in range(len(self.data[1]))]
 
-    
+
     def kCluster(self):
         done = False
 
@@ -152,8 +153,6 @@ class kClusterer:
 ######################################
 ##      RUN THE K-MEANS CLUSTER     ##
 ######################################
-for n in range(1,5):
-    print "=========== k = %d ============" % n
-    km = kClusterer('C:\Users\claus_000\Desktop\dogs.csv',n)
-    km.kCluster()
-    km.showMembers()
+km = kClusterer('C:\\Users\\claus_000\\Desktop\\cereal.csv',3)
+km.kCluster()
+km.showMembers()
