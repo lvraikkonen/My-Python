@@ -78,7 +78,8 @@ def create_adjacency_matrix(data, eps):
     "described existence of link between points (marks them as neighbors)."
     
     "(in) data                - input data - list of points where each point is represented by list of coordinates."
-    "(in) eps                 - connectivity radius (similarity threshold), points are neighbors if distance between them is less than connectivity radius."
+    "(in) eps                 - connectivity radius (similarity threshold),
+                                "points are neighbors if distance between them is less than connectivity radius."
     
     "Returns adjacency matrix for the input data set in line with connectivity radius."
     
