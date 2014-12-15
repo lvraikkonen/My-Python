@@ -33,9 +33,3 @@ class MinStack:
 
     def size(self):
         return len(self.data)
-
-## leetcode oj: Parentheses
-def parChecker(symbolString):
-    push_set = ("{","(","[")
-    pop_set = ("}",")","]")
-    
