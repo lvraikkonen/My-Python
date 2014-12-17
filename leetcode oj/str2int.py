@@ -33,7 +33,8 @@ def atoi(str):
         elif val.isdigit():
             end += val
         else:
-            continue
+            #continue # int after strings
+            break
     if end in ['+','-']:
         end = ""
     end = int(end) if end else 0
@@ -43,5 +44,5 @@ def atoi(str):
         return 'INT_MIN'
     return end
 
-str = '  +14325331fas9'
+str = '+-313'
 print atoi(str)
