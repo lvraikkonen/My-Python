@@ -1,4 +1,4 @@
-def anagram1(s1,s2):
+def anagram1(s1, s2):
     """ identify if two strings are anagram """
     alist = list(s2)
     pos1 = 0
@@ -19,7 +19,8 @@ def anagram1(s1,s2):
         pos1 += 1
     return stillOK
 
-def anagram2(s1,s2):
+
+def anagram2(s1, s2):
     alist = list(s1)
     blist = list(s2)
 
@@ -28,7 +29,7 @@ def anagram2(s1,s2):
 
     matched = True
     pos = 0
-    while pos<len(alist) and matched:
+    while pos < len(alist) and matched:
         if alist[pos] == blist[pos]:
             pos += 1
         else:
@@ -39,4 +40,4 @@ def anagram2(s1,s2):
 s1 = 'hello'
 s2 = 'loahe'
 
-anagram2(s1,s2)
+anagram2(s1, s2)
